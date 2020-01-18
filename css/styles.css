@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125em;
+  color: #40514e;
+}
+p {
+  line-height: 2;
+}
+h1 {
+  color: #66bfbf;
+  margin: 50px auto 0 auto;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 5.625rem; /* 16px = 100% = 1em static sized fonts do not change dynamically.
+   % and em do.
+   em adn % inherit the font-size and apply the modification * that fontsize 
+   rem (root em) makes it so that it's not inherited.*/
+  line-height: 2;
+}
+h2 {
+  color: #66bfbf;
+  font-family: 'Merriweather', serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+h3 {
+  color: #11999e;
+  font-family: 'Merriweather', serif;
+}
+hr {
+  border: 6px dotted #eaf6f6;
+  border-bottom: none;
+  margin: 100px auto 100px auto;
+  width: 5%;
+}
+a {
+  color: #11999e;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+a:hover {
+  color: #eaf6f6;
+}
+
+.top-container {
+  background-color: #e4f9f5;
+  position: relative;
+  padding-top: 100px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+.bottom-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+.middle-container {
+  position: relative;
+  margin: 100px auto 100px auto;
+  top: 20px;
+}
+.bottom-container {
+  background-color: #66bfbf;
+  line-height: 2;
+  position: relative;
+  padding: 50px 0 20px;
+  top: 20px;
+}
+.profile-img {
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+}
+.coding-icon {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+.critical-thinking {
+  width: 25%;
+  float: right;
+}
+.math {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+.skills {
+  width: 50%;
+  margin: auto;
+}
+.skill-row {
+  line-height: 2;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+.coding-description {
+  clear: left;
+}
+.critical-thinking-desc {
+  clear: right;
+}
+.profile {
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  line-height: 2;
+}
+.contact-me {
+  text-align: center;
+  width: 40%;
+  margin: 40px auto 60px auto;
+  line-height: 2;
+}
+.btn {
+  margin-top: 30px;
+  box-shadow: 0px 10px 14px -7px #276873;
+  background: linear-gradient(to bottom, #66bfbf 5%, #408c99 100%);
+  background-color: #66bfbf;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.25rem;
+  padding: 13px 32px;
+  text-decoration: none;
+}
+.btn:hover {
+  background: linear-gradient(to bottom, #408c99 5%, #66bfbf 100%);
+  background-color: #408c99;
+}
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+.footer-link {
+  font-size: 1.5rem;
+  margin: 30px;
+}
+.copyright {
+  color: #eaf6f6;
+  margin-top: 20px;
+}
+
+.typewriter,
+h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.1em solid #11999e; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.05em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #11999e;
+  }
+}
